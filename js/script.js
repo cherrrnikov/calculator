@@ -8,6 +8,9 @@ const input = function (i) {
     if (inputCalc.value === "Dividing by zero is not allowed") {
         inputCalc.value = "";
     }
+    if (inputCalc.value == 0) {
+        inputCalc.value = "";
+    }
     inputCalc.value += i;
 };
 const backspace = function () {
@@ -30,7 +33,10 @@ const result = function () {
         inputResult.value = "";
     }
 };
-
+const percent = function () {
+    inputCalc.value = eval(inputCalc.value) / 100;
+    inputResult.value = inputCalc.value;
+};
 //Degrees
 const toRadians = function (deg) {
     return deg * (Math.PI / 180);
