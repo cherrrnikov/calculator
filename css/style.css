@@ -22,12 +22,13 @@ input {
     cursor: auto
 }
 .account {
-    color: white;
+    color: #D1D1D1;
     font-size: 20px;
 }
 .account::placeholder {
     color: #D1D1D1;
 }
+
 .result {
     color: white;
     font-size: 32px;
@@ -45,6 +46,7 @@ input {
     overflow: hidden;
 }
 .btn {
+    position: relative;
     border: none;
     outline: none;
     font-size: 25px;
@@ -63,4 +65,9 @@ input {
 }
 .btn:hover {
     filter:brightness(80%)
+}
+.upper {
+    font-size: 15px;
+    position: absolute;
+    top: 8px;
 }
